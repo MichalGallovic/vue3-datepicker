@@ -13,6 +13,9 @@
     <template #subheading>
       <span v-for="day in weekDays" :key="day"> {{ day }} </span>
     </template>
+    <template #picker-popup-header>
+      <slot name="day-picker-header"></slot>
+    </template>
   </picker-popup>
 </template>
 

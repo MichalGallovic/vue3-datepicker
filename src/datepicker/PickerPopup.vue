@@ -57,6 +57,9 @@
         </slot>
       </button>
     </div>
+    <div>
+      <slot name="picker-popup-header"></slot>
+    </div>
     <div class="v3dp__body">
       <template v-if="'subheading' in $slots">
         <div class="v3dp__subheading">

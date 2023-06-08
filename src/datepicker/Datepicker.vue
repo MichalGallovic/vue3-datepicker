@@ -53,7 +53,11 @@
       :weekdayFormat="weekdayFormat"
       @select="selectDay"
       @back="viewShown = 'month'"
-    />
+    >
+      <template #day-picker-header>
+        <slot name="header"></slot>
+      </template>
+    </day-picker>
     <time-picker
       v-show="viewShown === 'time'"
       v-model:pageDate="pageDate"
