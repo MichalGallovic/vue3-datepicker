@@ -1021,7 +1021,8 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         ])
       ], 512 /* NEED_PATCH */), [
         [vShow, _ctx.clearable && _ctx.modelValue]
-      ])
+      ]),
+      renderSlot(_ctx.$slots, "after-input")
     ]),
     withDirectives(createVNode(_component_year_picker, {
       pageDate: _ctx.pageDate,

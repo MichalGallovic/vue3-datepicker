@@ -990,7 +990,8 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         ])
       ], 512 /* NEED_PATCH */), [
         [vue.vShow, _ctx.clearable && _ctx.modelValue]
-      ])
+      ]),
+      vue.renderSlot(_ctx.$slots, "after-input")
     ]),
     vue.withDirectives(vue.createVNode(_component_year_picker, {
       pageDate: _ctx.pageDate,

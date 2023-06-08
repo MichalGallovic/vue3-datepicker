@@ -20,6 +20,7 @@
           <i @click="clearModelValue()">x</i>
         </slot>
       </div>
+      <slot name="after-input"></slot>
     </div>
     <year-picker
       v-show="viewShown === 'year'"
